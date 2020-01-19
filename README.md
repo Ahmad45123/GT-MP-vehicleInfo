@@ -1,9 +1,6 @@
 # vehicleInfo.json - Vehicle Information Library V1.4.1
 This ScriptHookV.NET3 script is intended to generate information about all vehicles available in GTA V. 
 
-**⚠️ This repository has been deprecated and no future information will be generated!**     
-The latest scripts are in the latest release of this repository.
-
 ## Usecases
 * Validate information about vehiclemods or -liveries serverside
 * Provide only available mods to the player while modding the vehicle
@@ -132,5 +129,6 @@ _todo_
 * Some mod slots contain some mods, but they don't have a title. This is not fixable
 
 ## Thanks to
-[SyBozz](https://gt-mp.net/user/2198-sybozz/) for assisting me and collecting some further information
+SyBozz for assisting me and collecting some further information
+[Micky5991](https://github.com/Micky5991) for original code.
 
