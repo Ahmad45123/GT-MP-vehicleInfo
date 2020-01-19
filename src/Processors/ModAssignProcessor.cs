@@ -32,7 +32,7 @@ namespace GT_MP_vehicleInfo.Processors
                 }
                 catch (Exception e)
                 {
-                    GTA.Console.Error("FEHLER BEI: " + vehicle.name);
+                    //GTA.Console.Error("FEHLER BEI: " + vehicle.name);
                 }
 
             }

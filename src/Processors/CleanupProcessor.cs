@@ -30,7 +30,7 @@ namespace GT_MP_vehicleInfo.Processors
         {
             var emptyIds = vehicle.mods.Where(e => e.Value.amount == 0).Select(e => e.Key).ToArray();
 
-            Console.Debug("EMPTYIDS: " + JsonConvert.SerializeObject(emptyIds));
+            //Console.Debug("EMPTYIDS: " + JsonConvert.SerializeObject(emptyIds));
             
             foreach (int emptyId in emptyIds)
             {

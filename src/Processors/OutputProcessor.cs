@@ -70,7 +70,7 @@ namespace GT_MP_vehicleInfo.Processors
             }
             catch (IOException e)
             {
-                Console.Error("AN ERROR OCCURED: " + e.Message);
+                //Console.Error("AN ERROR OCCURED: " + e.Message);
             }
             
         }
