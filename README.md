@@ -1,4 +1,4 @@
-# vehicleInfo.json - Vehicle Information Library V1.4.1
+# vehicleInfo.json - Vehicle Information Library V1.4.2
 This ScriptHookV.NET3 script is intended to generate information about all vehicles available in GTA V. 
 
 ## Usecases
