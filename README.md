@@ -42,10 +42,10 @@ This ScriptHookV.NET3 script is intended to generate information about all vehic
 - Maximum vehicle braking (float) [New in 1.3.0]
 - Maximum vehicle traction (float) [New in 1.3.0]
 - Vehicle Acceleration (float) [New in 1.3.0]
-- _0xBFBA3BA79CFF7EBF (float) [New in 1.3.0]
-- _0x53409B5163D5B846 (float) [New in 1.3.0]
-- _0xC6AD107DDC9054CC (float) [New in 1.3.0]
-- _0x5AA3F878A178C4FC (float) [New in 1.3.0]
+- MaxBrakingMaxMods (float) [New in 1.4.2]
+- Vehicle Down Force (float) [New in 1.4.2]
+- Maximum Knots (float) [New in 1.4.2]
+- Move Resistance (float) [New in 1.4.2]
 - Maximum number of passengers (integer) [New in 1.3.0]
 - Maximum number of occupants (integer) [New in 1.3.0]
     ​
@@ -69,6 +69,9 @@ This ScriptHookV.NET3 script is intended to generate information about all vehic
 ```
 
 ## Changelogs
+### V 1.4.2
+* Replaced natives with their actual names.
+
 ### V 1.4.1
 * Increase mod-range to suppot more mod-slots
 
