@@ -25,12 +25,14 @@ namespace GT_MP_vehicleInfo.Processors
 	        vehicle.maxBraking = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_BRAKING, vehicle.hash);
 	        vehicle.maxTraction = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_TRACTION, vehicle.hash);
 	        vehicle.maxAcceleration = Function.Call<float>(Hash.GET_VEHICLE_MODEL_ACCELERATION, vehicle.hash);
-	        vehicle._0xBFBA3BA79CFF7EBF = Function.Call<float>((Hash) Convert.ToUInt64("0xBFBA3BA79CFF7EBF", 16), vehicle.hash);
-	        vehicle._0x53409B5163D5B846 = Function.Call<float>((Hash) Convert.ToUInt64("0x53409B5163D5B846", 16), vehicle.hash);
-	        vehicle._0xC6AD107DDC9054CC = Function.Call<float>((Hash) Convert.ToUInt64("0xC6AD107DDC9054CC", 16), vehicle.hash);
-	        vehicle._0x5AA3F878A178C4FC = Function.Call<float>((Hash) Convert.ToUInt64("0x5AA3F878A178C4FC", 16), vehicle.hash);
-	        vehicle.maxNumberOfPassengers = Function.Call<int>((Hash) Convert.ToUInt64("0x2AD93716F184EDA4", 16), vehicle.hash) - 1;
-	        vehicle.maxOccupants = Function.Call<int>((Hash) Convert.ToUInt64("0x2AD93716F184EDA4", 16), vehicle.hash);
+            
+            vehicle.maxBrakingMaxMods = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS, vehicle.hash);
+	        vehicle.downForce = Function.Call<float>(Hash._GET_VEHICLE_MODEL_DOWN_FORCE, vehicle.hash);
+	        vehicle.maxKnots = Function.Call<float>(Hash._GET_VEHICLE_MODEL_MAX_KNOTS, vehicle.hash);
+	        vehicle.moveResistance = Function.Call<float>(Hash._GET_VEHICLE_MODEL_MOVE_RESISTANCE, vehicle.hash);
+            
+	        vehicle.maxNumberOfPassengers = Function.Call<int>(Hash.GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS, vehicle.hash) - 1;
+            vehicle.maxOccupants = Function.Call<int>(Hash.GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS, vehicle.hash);
 	        
             if (File.Exists(Path.Combine(Main.BasePath, "gen_vdata/") + vehicle.name + ".json")) return;
             

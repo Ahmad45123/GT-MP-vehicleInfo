@@ -32,10 +32,10 @@ namespace GT_MP_vehicleInfo.Data
         public float maxBraking;
         public float maxTraction;
         public float maxAcceleration;
-        public float _0xBFBA3BA79CFF7EBF;
-        public float _0x53409B5163D5B846;
-        public float _0xC6AD107DDC9054CC;
-        public float _0x5AA3F878A178C4FC;
+        public float maxBrakingMaxMods;
+        public float downForce;
+        public float maxKnots;
+        public float moveResistance;
         public int maxNumberOfPassengers;
         public int maxOccupants;
         
