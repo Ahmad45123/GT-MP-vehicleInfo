@@ -84,7 +84,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="AfterBuild">
-    <Copy SourceFiles="bin/Debug/CarInfoGen.dll" DestinationFolder="E:\Program Files\Rockstar Games\Grand Theft Auto V\scripts" />
-  </Target>
 </Project>
