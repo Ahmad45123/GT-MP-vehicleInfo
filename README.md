@@ -98,8 +98,8 @@ This ScriptHookV.NET3 script is intended to generate information about all vehic
 
 Description | Last updated | Download
 --- | --- | ---
-Without localization* | 28th July 2019 | [Click here](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo.noloc.json)
-Without listing** | 28th July 2019 | [Click here](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo.nolist.json)
+Without localization* | 28th January 2020 | [Click here](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.2-dch/vehicleInfo.noloc.json)
+Without listing** | 28th January 2020 | [Click here](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.2-dch/vehicleInfo.nolist.json)
 
 *This version can be used if you want to create your own gametexts with `API.getGameText(string name);` [GT-MP Wiki entry](https://wiki.gt-mp.net/index.php?title=GetGameText)
 
@@ -109,10 +109,10 @@ Without listing** | 28th July 2019 | [Click here](https://github.com/Micky5991/G
 
 Language | Last updated | Single file | Multiple files
 --- | --- | --- | ---:
-English | 28th July 2019 | [JSON](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-en.full.json) | [ZIP](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-en.zip)
-German | 28th July 2019 | [JSON](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-de.full.json) | [ZIP](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-de.zip)
-French | 28th July 2019 | [JSON](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-fr.full.json) | [ZIP](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-fr.zip)
-Brazilian Portuguese | 28th July 2019 | [JSON](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-pt-br.full.json) | [ZIP](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.1-vw/vehicleInfo-pt-br.zip)
+English | 28th January 2020 | [JSON](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.2-dch/vehicleInfo-en.full.json) | [ZIP](https://github.com/Micky5991/GT-MP-vehicleInfo/releases/download/V1.4.2-dch/vehicleInfo-en.zip)
+German | 28th January 2020 | REQUEST | REQUEST
+French | 28th January 2020 | REQUEST | REQUEST
+Brazilian Portuguese | 28th January 2020 | REQUEST | REQUEST
 
 If you want to look into the structure of this file, we also have an indented version:
 
