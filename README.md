@@ -132,6 +132,8 @@ _todo_
 * Some mod slots contain some mods, but they don't have a title. This is not fixable
 
 ## Thanks to
-SyBozz for assisting me and collecting some further information
+Zayn for collecting latest files/information.
+Ahmed for regenerating the files with latest version of the code.
+SyBozz for assisting Micky collecting some further information
 [Micky5991](https://github.com/Micky5991) for original code.
 
