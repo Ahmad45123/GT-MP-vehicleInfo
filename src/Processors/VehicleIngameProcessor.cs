@@ -21,20 +21,20 @@ namespace GT_MP_vehicleInfo.Processors
 	        vehicle.vehicleClassName = "VEH_CLASS_" + vehicle.vehicleClass;
             vehicle.displayName = Vehicle.GetModelDisplayName(vehicle.hash);
 
-	        vehicle.maxSpeed = Function.Call<float>(Hash._GET_VEHICLE_MODEL_MAX_SPEED, vehicle.hash);
+			vehicle.maxSpeed = Function.Call<float>(Hash._GET_VEHICLE_MODEL_MAX_SPEED, vehicle.hash);
 	        vehicle.maxBraking = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_BRAKING, vehicle.hash);
 	        vehicle.maxTraction = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_TRACTION, vehicle.hash);
 	        vehicle.maxAcceleration = Function.Call<float>(Hash.GET_VEHICLE_MODEL_ACCELERATION, vehicle.hash);
-            
-            vehicle.maxBrakingMaxMods = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS, vehicle.hash);
+
+			vehicle.maxBrakingMaxMods = Function.Call<float>(Hash.GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS, vehicle.hash);
 	        vehicle.downForce = Function.Call<float>(Hash._GET_VEHICLE_MODEL_DOWN_FORCE, vehicle.hash);
 	        vehicle.maxKnots = Function.Call<float>(Hash._GET_VEHICLE_MODEL_MAX_KNOTS, vehicle.hash);
 	        vehicle.moveResistance = Function.Call<float>(Hash._GET_VEHICLE_MODEL_MOVE_RESISTANCE, vehicle.hash);
-            
-	        vehicle.maxNumberOfPassengers = Function.Call<int>(Hash.GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS, vehicle.hash) - 1;
-            vehicle.maxOccupants = Function.Call<int>(Hash.GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS, vehicle.hash);
-	        
-            if (File.Exists(Path.Combine(Main.BasePath, "gen_vdata/") + vehicle.name + ".json")) return;
+
+            vehicle.maxOccupants = Function.Call<int>(Hash.GET_VEHICLE_MODEL_NUMBER_OF_SEATS, vehicle.hash);
+			vehicle.maxNumberOfPassengers = vehicle.maxOccupants - 1;
+
+			if (File.Exists(Path.Combine(Main.BasePath, "gen_vdata/") + vehicle.name + ".json")) return;
             
             if (counter++ == 0)
             {
@@ -62,9 +62,9 @@ namespace GT_MP_vehicleInfo.Processors
 		        neon = veh.Mods.HasNeonLights,
 		        wheelType = veh.Mods.WheelType
 	        });
-	            
+
 	        veh.Delete();
-	        Script.Wait(150);
+			Script.Wait(150+300);
         }
 
 	    public static IEnumerable<string> LoadVehicleBones()

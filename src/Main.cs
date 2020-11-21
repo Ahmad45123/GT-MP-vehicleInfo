@@ -38,7 +38,7 @@ namespace GT_MP_vehicleInfo
             }*/
             if (e.KeyCode == Keys.NumPad1)
             {
-                if (string.IsNullOrEmpty(languageCode)) languageCode = Game.GetUserInput("de");
+                if (string.IsNullOrEmpty(languageCode)) languageCode = Game.GetUserInput("en");
                 
                 Notification.Show("~y~Starting...");
                 

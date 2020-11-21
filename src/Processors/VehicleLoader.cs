@@ -38,12 +38,10 @@ namespace GT_MP_vehicleInfo.Processors
         {
             foreach (var element in elements)
             {
-                
                 Main.Storage.Add(new VehicleData
                 {
                     name = element.Element("modelName").Value
                 }, element);
-                
             }
         }
         
